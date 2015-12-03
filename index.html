@@ -8,9 +8,74 @@
     <meta name="description" content="Печать фото на холсте в Харькове. Цены на печать фотографий на холстах. Заказать фото на холсте с доставкой по Харькову и области. Фотопечать на холсте на заказ." />
     <meta name="keywords" content="печать фотографии фото на холсте харьков цены на заказ" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="css/stickup.css" rel="stylesheet">   
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
+	<section class="header">
+		<div class="container">
+			<a href="index.html" class="logo col-xs-12 col-sm-4 col-md-2">
+				<img src="images/logo.png" alt="logo">
+			</a>
+			<div class="header-contacts col-xs-12-col-sm-7 col-sm-offset-1 col-md-4 col-md-offset-6">
+				<p class="phone"><span class="phone-icon"></span>+38 (057) 555-36-27</p>
+				<p class="e-mail"><span class="e-mail-icon"></span>holstholst@mail.ru</p>
+				<p class="skype"><span class="skype-icon"></span>holstholst</p>
+			</div>
+		</div>
+	</section>
+	<section class="navigation">
+		<!-- START THE NAVBAR -->
+	    <div class="navbar-wrapper">
+	      <div class="container">
+	      <div class="navwrapper">
+	        <div class="navbar navbar-static-top">
+	          <div class="container">
+	            <div class="navbar-header">
+	              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	              </button>
+	            </div>
+	            <div class="navbar-collapse collapse">
+	              <ul class="nav navbar-nav">
+	                <li class="menuItem active"><a href="#home">Главная</a></li>
+	                <li class="menuItem"><a href="#ideas">Идеи для печати</a></li>
+	                <li class="menuItem"><a href="#production">Производство вашего холста</a></li>
+	                <li class="menuItem"><a href="#action">Акции</a></li>
+	                <li class="menuItem"><a href="#contacts">Контакты</a></li>   
+	              </ul>
+	            </div>
+	          </div>
+	        </div> 
+	      </div><!-- End Navbar -->
+	      
+	      </div>
+	    </div> <!-- END NAVBAR -->
+	</section>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stickUp.min.js"></script>
+	<script type="text/javascript">
+              //initiating jQuery  
+              jQuery(function($) {
+                $(document).ready( function() {
+                  //enabling stickUp on the '.navbar-wrapper' class
+                  $('.navbar-wrapper').stickUp({
+                                parts: {
+                                  0:'home',
+                                  1:'ideas',
+                                  2: 'production',
+                                  3: 'action',
+                                  4: 'contacts'
+                                },
+                                itemClass: 'menuItem',
+                                itemHover: 'active'
+                              });
+                });
+              });
+            
+            </script>
 </body>
 </html>

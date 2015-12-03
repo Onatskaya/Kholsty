@@ -1,0 +1,70 @@
+@font-face{
+    font-family:'AvantGardeCTT';
+    src: url('../fonts/AvantGardeCTT.eot');
+    src: url('../fonts/AvantGardeCTT.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvantGardeCTT.woff') format('woff'),
+         url('../fonts/AvantGardeCTT.ttf') format('truetype'),
+         url('../fonts/AvantGardeCTT.svg#Sri-TSCRegular') format('svg')
+}
+.header{
+	background: #f24fa0;
+}
+.header .container{
+	padding-top:  20px;
+	padding-bottom: 20px;
+}
+.header-contacts p{
+	font-family: AvantGardeCTT;
+	color: #fff;
+}
+.header-contacts .phone{
+	font-size: 1.785714em;
+	text-align: right;
+}
+.header-contacts .e-mail,
+.header-contacts .skype{
+	display: inline-block;
+	margin-left: 3.5em;
+	text-align: right;
+}
+.phone-icon{
+	display: inline-block;
+	background: url(../images/icons.png) no-repeat -2px -5px;
+	width: 15px;
+	height: 17px;
+	margin-right: 10px;
+}
+.e-mail-icon{
+	display: inline-block;
+	background: url(../images/icons.png) no-repeat -30px -8px;
+	width: 19px;
+	height: 13px;
+	margin-right: 10px;
+}
+.skype-icon{
+	display: inline-block;
+	background: url(../images/icons.png) no-repeat -55px -5px;
+	width: 22px;
+	height: 22px;
+	margin-right: 10px;
+}
+/* ---------------------Navigation-------------------------------- */
+.navigation{
+	background: #33cd95;
+}
+.nav > li > a{
+	color: #fff;
+	font-size: 1.2148em;
+	padding: 10px 1.5em;
+	line-height: 30px;
+}
+.navbar{
+	margin-bottom: 0;
+	border-bottom: 0;
+}
+.navbar-wrapper{
+	margin-top: 2px;
+}
+.nav > li:first-child > a{
+	padding-left: 0;
+}
