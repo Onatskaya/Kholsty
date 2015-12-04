@@ -6,15 +6,35 @@
          url('../fonts/AvantGardeCTT.ttf') format('truetype'),
          url('../fonts/AvantGardeCTT.svg#Sri-TSCRegular') format('svg')
 }
+@font-face{
+    font-family:'AvantGardeCTTBold';
+    src: url('../fonts/AvantGardeCTTBold.eot');
+    src: url('../fonts/AvantGardeCTTBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AvantGardeCTTBold.woff') format('woff'),
+         url('../fonts/AvantGardeCTTBold.ttf') format('truetype'),
+         url('../fonts/AvantGardeCTTBold.svg#Sri-TSCRegular') format('svg')
+}
+
+body{
+	font-family: AvantGardeCTT;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+}
+
 .header{
 	background: #f24fa0;
+	margin-bottom: 2px;
 }
 .header .container{
 	padding-top:  20px;
 	padding-bottom: 20px;
 }
+.logo img{
+	margin-left: 1.5em;
+}
 .header-contacts p{
-	font-family: AvantGardeCTT;
 	color: #fff;
 }
 .header-contacts .phone{
@@ -50,7 +70,7 @@
 }
 /* ---------------------Navigation-------------------------------- */
 .navigation{
-	background: #33cd95;
+	background: #00B1EF;
 }
 .nav > li > a{
 	color: #fff;
@@ -63,8 +83,152 @@
 	border-bottom: 0;
 }
 .navbar-wrapper{
-	margin-top: 2px;
+	margin-top: 0;
+	background: #00B1EF;
 }
-.nav > li:first-child > a{
-	padding-left: 0;
+.navbar-toggle .icon-bar{
+	background: #fff;
+}
+.navbar-toggle{
+	border-color: #fff;
+}
+.navbar-nav li.active a,
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background: #428bca;
+}
+
+/*------------------------------------------------------------------*/
+.bunner img{
+	width: 100%;
+	margin: 10px 0;
+}
+.advantages{
+	background: #33cd95;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	color: #fff;
+}
+.advantages img{
+	display: block;
+	margin: auto;
+}
+.advantages p{
+	font-size: 1.5em;
+	text-align: center;
+}
+.advantages p.subtitle{
+	font: 1.71429em AvantGardeCTTBold;
+}
+.advantages p span{
+	font-size: 0.5em;
+}
+/*-----------------------Examples------------------------------------*/
+.our_examples h1{
+	font: 1.71429em AvantGardeCTTBold;
+	text-transform: uppercase;
+	color: #191919;
+	margin: 30px auto;
+}
+.our_examples h1 span{
+	display: block;
+	text-transform: none;
+	font-family: AvantGardeCTT;
+}
+/* ------------------------------------------------ */
+.calculator-section h3{
+	color: #191919;
+	font: 1.71429em AvantGardeCTTBold;
+}
+.calculator-section h3 span{
+	display: block;
+	font-family: AvantGardeCTT;
+}
+.calculator-section p span{
+	font-family: Arial;
+}
+/* ------------Order--------------------------------------- */
+.order{
+	background: #33cd95;
+	text-align: center;
+	padding: 15px 0;
+}
+.order img{
+	display: block;
+	margin: 7px auto;
+}
+.order h3{
+	color: #fff;
+	font: 1.71429em AvantGardeCTTBold;
+}
+.order-title{
+	font: 1.2em AvantGardeCTTBold;
+	color: #000;
+}
+.order-title + p{
+	color: #fff;
+	font-size: 1.2em;
+}
+/* --------------------prices------------------------ */
+.prices{
+	padding-bottom: 30px;
+}
+.prices h3{
+	color: #000;
+	font: 1.71429em AvantGardeCTTBold;
+}
+.prices h3 span{
+	font-family: AvantGardeCTT;
+	display: block;
+}
+.prices img{
+	display: block;
+	margin: auto;
+}
+.prices img + p{
+	font: 1.57143em AvantGardeCTTBold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #000;
+}
+.makeAnOrder{
+	display: block;
+	background: #f24fa0;
+	color: #fff;
+	border-radius: 0;
+}
+/* --------------------Footer---------------------- */
+.footer-top{
+	background: #fddb31; /* Old browsers */
+	background: -moz-linear-gradient(left, #fddb31 0%, #fddb31 40%, #33cd95 40%, #33cd95 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #fddb31 0%,#fddb31 40%,#33cd95 40%,#33cd95 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #fddb31 0%,#fddb31 40%,#33cd95 40%,#33cd95 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.footer-top p{
+	font: 1.71429em/4.5 AvantGardeCTT;
+	color: #000;
+	margin-bottom: 0;
+}
+.footer-top .footer-mail p,
+.footer-top .footer-phone p{
+	font: 1.14286em/2 AvantGardeCTT;
+	color: #fff;
+	display: inline-block;
+	padding-top: 25px;
+}
+.footer-top .footer-mail p span,
+.footer-top .footer-phone p span{
+	display: block;
+}
+.footer-top .footer-phone:before{
+	content: url(../images/footer-phone.png);
+	display: inline-block;
+	padding-right: 20px;
+}
+.footer-top .footer-mail:before{
+	content: url(../images/footer-mail.png);
+	display: inline-block;
+	position: relative;
+	top: -8px;
+	padding-right: 20px;
 }
