@@ -196,8 +196,8 @@ img{
 	background: #f24fa0;
 	color: #fff;
 	border-radius: 0;
-	padding: 5px 50px;
-	margin-left: 32%;
+	width: 180px;
+	margin: auto;
 }
 /* --------------------Footer---------------------- */
 .footer-top{
@@ -236,6 +236,14 @@ img{
 	padding-right: 20px;
 	margin-left: 5em;
 }
+@media screen and (max-width: 991px) {
+	.footer-top{
+		background: #fddb31;
+	}
+	.footer-top .footer-mail::before{
+		top: 2px;
+	}
+}
 .footer-bottom{
 	background: #313131;
 }
@@ -273,7 +281,8 @@ label img{position: relative!important; left: 30%;}
 .popup div:nth-of-type(1){padding-top:0}
 .popup div:nth-last-of-type(1){padding:1% 0 4%}
 .popup div:after{ content:attr(data-title);  display:block;  font-size:50%;  font-weight:normal;  text-shadow:none}
-.popup label{ text-align:right}
+.popup label{ text-align:right;}
 .popup input{font-size:100%}
 .popup [type='submit']{cursor:pointer}
 .popup label:hover{ color:#dbeaf9;  cursor:pointer}
+label{display: block;}
