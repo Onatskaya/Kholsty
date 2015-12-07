@@ -196,6 +196,8 @@ img{
 	background: #f24fa0;
 	color: #fff;
 	border-radius: 0;
+	padding: 5px 50px;
+	margin-left: 32%;
 }
 /* --------------------Footer---------------------- */
 .footer-top{
@@ -224,6 +226,7 @@ img{
 	content: url(../images/footer-phone.png);
 	display: inline-block;
 	padding-right: 20px;
+	margin-left: 5em;
 }
 .footer-top .footer-mail:before{
 	content: url(../images/footer-mail.png);
@@ -231,4 +234,46 @@ img{
 	position: relative;
 	top: -8px;
 	padding-right: 20px;
+	margin-left: 5em;
 }
+.footer-bottom{
+	background: #313131;
+}
+.footer-bottom p{
+	color: #fff;
+	text-align: center;
+	line-height: 5;
+	margin-bottom: 0;
+}
+.footer-bottom a{
+	color: #fff;
+}
+/*___________________Recall _________________*/
+.popup form div input.b1{ border:1px solid #D3D3D3!important;  border-radius:6px!important;  box-sizing:border-box!important;  font-size:11px!important;  padding:10px 8px!important;  color:#7C7C7C!important;  width:250px}
+#kod{ width:50px!important}
+.tel{ width:250px!important}
+.popup form div input.b2{ box-sizing:border-box;  margin-left:190px; margin-top:-15px;  color:#7C7C7C}
+.popup form div input.b3{ border:1px solid #D3D3D3;  border-radius:6px;  box-sizing:border-box;  font-size:15px;  padding:10px 8px;  background-color:#F24FA0;  color:white;  width:220px}
+.textarea{ border:1px solid #D3D3D3;  border-radius:6px;  box-sizing:border-box;  font-size:15px;  padding:10px 10px 10px 10px;  color:#7C7C7C;  width:250px;  height:100px}
+#mail,#mail1, #mail2{visibility:hidden}
+#mail:checked ~ .popup form, 
+#mail1:checked ~ .popup form,
+#mail2:checked ~ .popup form{visibility:visible}
+label img{position: relative!important; left: 30%;}
+#mail:checked+label,
+#mail1:checked+label,
+#mail2:checked+label{ position:fixed!important;  top:0!important; bottom:0!important; right:0!important; left: 0!important; z-index:99;  background:#333; opacity: 0.5;  cursor:pointer;}
+
+#mail:checked+label > p,
+#mail1:checked+label > p,
+#mail2:checked+label > p{display: none;}
+
+.popup{ visibility:hidden;  position:fixed;  top:0; left:0; bottom:0; right:0;  z-index:1000}
+.popup form{ font-size:11px;  position:absolute;  top:50%; left:50%;  -ms-transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);  text-align:center;  font-size:16px;  color:#3b5998;  background:#00B1EF;  border-radius:10px;  width:320px;  padding:10px 10px 10px 10px}
+.popup div:nth-of-type(1){padding-top:0}
+.popup div:nth-last-of-type(1){padding:1% 0 4%}
+.popup div:after{ content:attr(data-title);  display:block;  font-size:50%;  font-weight:normal;  text-shadow:none}
+.popup label{ text-align:right}
+.popup input{font-size:100%}
+.popup [type='submit']{cursor:pointer}
+.popup label:hover{ color:#dbeaf9;  cursor:pointer}

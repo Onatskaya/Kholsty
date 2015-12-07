@@ -146,18 +146,147 @@
 			<h3 class="text-center">Цены на печать фотоколлажей на холсте<span>Мы печатаем коллажи любого размера, ниже указаны цены <br />на самые популярные позиции:</span></h3>
 			<div class="col-xs-12 col-sm-4">
 				<img src="images/20_30.jpg" alt="">
-				<p class="text-center">854 грн</p>
-				<button type="button" class="btn makeAnOrder col-xs-6 col-xs-offset-3">ЗАКАЗАТЬ</button>
+				<p class="text-center">954 грн</p>
+				<!-- <button type="button" class="btn makeAnOrder col-xs-6 col-xs-offset-3">ЗАКАЗАТЬ</button> -->
+				<input type="checkbox" id="mail"/>
+				<label for="mail" class="" style="cursor: pointer; position: relative;">
+					<p class="btn makeAnOrder" style="position: relative; top: 2%">ЗАКАЗАТЬ</p>
+					<!-- <img src="assets/components/images/recall-icon.png" style="position: relative; top: 2%" alt="Заказать звонок"> -->
+				</label>
+				<div class="popup">
+					<form method="post" action="mail.php">
+						<label for="mail" title="Отменить" style="margin-top: 0; position: relative; left: 100px;" class="b2">✕</label>
+						<div style=" text-align: center; font-size: 18px; margin-top: 0; color:#091a44;">Сделать заказ </div>
+						<br />
+						<div data-title="" style=" clear:both; display:block; font-size:14px; color:#637bad;">
+							<div style=""><input class="b1" type='text' name='name' required value='Имя'/
+								onfocus="if (this.value=='Имя') this.value='' "/
+								onblur="if (this.value==''){this.value='Имя'}"
+								></div>
+						</div>
+						<br />
+						<div style="margin-left:0px;">
+							<input class="b1 tel" type="tel" name='tel' required maxlength="11" value='Телефон*'/
+							onfocus="if (this.value=='Телефон*') this.value='' "/
+							onblur="if (this.value==''){this.value='Телефон*'}"
+							>
+						</div>
+						<div>
+							<br />
+							<div data-title="" style=" clear:both; display:block; font-size:14px; color:#637bad;">
+								<div style=""><input class="b1" type="vremya" name='vremya' required maxlength="11" value='Удобное время звонка'/
+									onfocus="if (this.value=='Удобное время звонка') this.value='' "/
+									onblur="if (this.value==''){this.value='Удобное время звонка'}" 
+									>
+								</div>
+							</div>
+						</div>
+						<br />
+						<textarea class="textarea b4" type="dopinfo" name='dopinfo'  cols="28" rows="10" aria-invalid="false"
+								onfocus="if (this.value=='Доп. информация') this.value='' "
+								onblur="if (this.value==''){this.value='Доп. информация'}" 
+								>Доп. информация</textarea>
+							<br />
+							<br />
+						<div style=""><input class="b3" type='submit' value='Заказать'/></div>
+					</form>
+				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<img src="images/40_60.jpg" alt="">
 				<p class="text-center">954 грн</p>
-				<button type="button" class="btn makeAnOrder col-xs-6 col-xs-offset-3">ЗАКАЗАТЬ</button>
+				<!-- <button type="button" class="btn makeAnOrder col-xs-6 col-xs-offset-3">ЗАКАЗАТЬ</button> -->
+				<input type="checkbox" id="mail1"/>
+				<label for="mail1" class="" style="cursor: pointer; position: relative;">
+					<p class="btn makeAnOrder" style="position: relative; top: 2%">ЗАКАЗАТЬ</p>
+					<!-- <img src="assets/components/images/recall-icon.png" style="position: relative; top: 2%" alt="Заказать звонок"> -->
+				</label>
+				<div class="popup">
+					<form method="post" action="mail.php">
+						<label for="mail1" title="Отменить" style="margin-top: 0; position: relative; left: 100px;" class="b2">✕</label>
+						<div style=" text-align: center; font-size: 18px; margin-top: 0; color:#091a44;">Сделать заказ </div>
+						<br />
+						<div data-title="" style=" clear:both; display:block; font-size:14px; color:#637bad;">
+							<div style=""><input class="b1" type='text' name='name' required value='Имя'/
+								onfocus="if (this.value=='Имя') this.value='' "/
+								onblur="if (this.value==''){this.value='Имя'}"
+								></div>
+						</div>
+						<br />
+						<div style="margin-left:0px;">
+							<input class="b1 tel" type="tel" name='tel' required maxlength="11" value='Телефон*'/
+							onfocus="if (this.value=='Телефон*') this.value='' "/
+							onblur="if (this.value==''){this.value='Телефон*'}"
+							>
+						</div>
+						<div>
+							<br />
+							<div data-title="" style=" clear:both; display:block; font-size:14px; color:#637bad;">
+								<div style=""><input class="b1" type="vremya" name='vremya' required maxlength="11" value='Удобное время звонка'/
+									onfocus="if (this.value=='Удобное время звонка') this.value='' "/
+									onblur="if (this.value==''){this.value='Удобное время звонка'}" 
+									>
+								</div>
+							</div>
+						</div>
+						<br />
+						<textarea class="textarea b4" type="dopinfo" name='dopinfo'  cols="28" rows="10" aria-invalid="false"
+								onfocus="if (this.value=='Доп. информация') this.value='' "
+								onblur="if (this.value==''){this.value='Доп. информация'}" 
+								>Доп. информация</textarea>
+							<br />
+							<br />
+						<div style=""><input class="b3" type='submit' value='Заказать'/></div>
+					</form>
+				</div>
 			</div>
 			<div class="col-xs-12 col-sm-4">
 				<img src="images/60_90.jpg" alt="">
 				<p class="text-center">1054 грн</p>
-				<button type="button" class="btn makeAnOrder col-xs-6 col-xs-offset-3">ЗАКАЗАТЬ</button>
+				<!-- <button type="button" class="btn makeAnOrder col-xs-6 col-xs-offset-3">ЗАКАЗАТЬ</button> -->
+				<input type="checkbox" id="mail2"/>
+				<label for="mail2" class="" style="cursor: pointer; position: relative;">
+					<p class="btn makeAnOrder" style="position: relative; top: 2%">ЗАКАЗАТЬ</p>
+					<!-- <img src="assets/components/images/recall-icon.png" style="position: relative; top: 2%" alt="Заказать звонок"> -->
+				</label>
+				<div class="popup">
+					<form method="post" action="mail.php">
+						<label for="mail2" title="Отменить" style="margin-top: 0; position: relative; left: 100px;" class="b2">✕</label>
+						<div style=" text-align: center; font-size: 18px; margin-top: 0; color:#091a44;">Сделать заказ </div>
+						<br />
+						<div data-title="" style=" clear:both; display:block; font-size:14px; color:#637bad;">
+							<div style=""><input class="b1" type='text' name='name' required value='Имя'/
+								onfocus="if (this.value=='Имя') this.value='' "/
+								onblur="if (this.value==''){this.value='Имя'}"
+								></div>
+						</div>
+						<br />
+						<div style="margin-left:0px;">
+							<input class="b1 tel" type="tel" name='tel' required maxlength="11" value='Телефон*'/
+							onfocus="if (this.value=='Телефон*') this.value='' "/
+							onblur="if (this.value==''){this.value='Телефон*'}"
+							>
+						</div>
+						<div>
+							<br />
+							<div data-title="" style=" clear:both; display:block; font-size:14px; color:#637bad;">
+								<div style=""><input class="b1" type="vremya" name='vremya' required maxlength="11" value='Удобное время звонка'/
+									onfocus="if (this.value=='Удобное время звонка') this.value='' "/
+									onblur="if (this.value==''){this.value='Удобное время звонка'}" 
+									>
+								</div>
+							</div>
+						</div>
+						<br />
+						<textarea class="textarea b4" type="dopinfo" name='dopinfo'  cols="28" rows="10" aria-invalid="false"
+								onfocus="if (this.value=='Доп. информация') this.value='' "
+								onblur="if (this.value==''){this.value='Доп. информация'}" 
+								>Доп. информация</textarea>
+							<br />
+							<br />
+						<div style=""><input class="b3" type='submit' value='Заказать'/></div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -175,7 +304,11 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer-bottom"></div>
+		<div class="footer-bottom">
+			<div class="container">
+				<p>Разработано - <a href="http://f1-reklama.com.ua" target="_blanket">Ф1-Реклама</a></p>
+			</div>
+		</div>
 	</footer>
 
 
