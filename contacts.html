@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Холсты</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Печать фото на холсте в Харькове. Цены на печать фотографий на холстах. Заказать фото на холсте с доставкой по Харькову и области. Фотопечать на холсте на заказ." />
+    <meta name="keywords" content="печать фотографии фото на холсте харьков цены на заказ" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link href="css/stickup.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">   
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body>
+	<div class="main-wrapper">
+		<section class="header">
+			<div class="container">
+				<a href="index.html" class="logo col-xs-12 col-sm-4">
+					<img src="images/logo.png" alt="logo">
+				</a>
+				<div class="header-contacts col-xs-12-col-sm-7 col-sm-offset-1 col-md-4 col-md-offset-4">
+					<p class="phone"><span class="phone-icon"></span>+38 (057) 555-36-27</p>
+					<p class="e-mail"><span class="e-mail-icon"></span>holstholst@mail.ru</p>
+					<p class="skype"><span class="skype-icon"></span>holstholst</p>
+				</div>
+			</div>
+		</section>
+		<section class="navigation">
+			<!-- START THE NAVBAR -->
+		    <div class="navbar-wrapper">
+		      <div class="container">
+		      <div class="navwrapper">
+		        <div class="navbar navbar-static-top">
+		          <div class="container">
+		            <div class="navbar-header">
+		              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		                <span class="icon-bar"></span>
+		              </button>
+		            </div>
+		            <div class="navbar-collapse collapse">
+		              <ul class="nav navbar-nav">
+		                <li class="menuItem"><a href="index.html">Главная</a></li>
+		                <li class="menuItem"><a href="ideas.html">Идеи для печати</a></li>
+		                <li class="menuItem"><a href="production.html">Производство вашего холста</a></li>
+		                <li class="menuItem"><a href="action.html">Акции</a></li>
+		                <li class="menuItem active"><a href="contacts.html">Контакты</a></li>   
+		              </ul>
+		            </div>
+		          </div>
+		        </div> 
+		      </div><!-- End Navbar -->
+		      
+		      </div>
+		    </div> <!-- END NAVBAR -->
+		</section><!-- End of header -->
+		<main>
+			<div class="container">
+				<h1>Контакты</h1>
+				<div class="production-container">
+					<div class="col-xs-12 col-sm-6">
+						<h2>Обратная связь</h2>
+						<form action="#" method="post" class="contact-form">
+						    <input type="hidden" name="nospam:blank" value="" />
+						    <label for="name">Ваше имя <span class="required">*</span>:</label>
+						    <span class="error"></span>
+						    <input type="text" name="name" id="name" value="" />
+						    <label for="email">Телефон <span class="required">*</span>:</label>
+						    <span class="error"></span>
+						    <input type="text" name="phone" id="phone" value="" />
+						    <label for="email">Email <span class="required">*</span>:</label>
+						    <span class="error"></span>
+						    <input type="text" name="email" id="email" value="" />
+						    <label for="text">Сообщение <span class="required">*</span>:</label>
+						    <span class="error"></span>
+						    <textarea name="text" id="text" value=""></textarea> 
+						    <p>*Поля, обязательные для заполнения</p> 
+						    <input class="submit_button" type="submit" value="Отправить" />
+						</form>
+					</div>
+					<div class="col-xs-12 col-sm-6 contact-info">
+						
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="col-xs-12 col-sm-4">
+					<p>Контактная информация:</p>
+				</div>
+				<div class="col-xs-12 col-sm-4 footer-phone">
+					<p>Телефон для связи<span>+38 (057) 555-36-27</span></p>
+				</div>
+				<div class="col-xs-12 col-sm-4 footer-mail">
+					<p>Почта для заявок<span>holstholst@mail.ru</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="container">
+				<p>Разработано - <a href="http://f1-reklama.com.ua" target="_blanket">Ф1-Реклама</a></p>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stickUp.min.js"></script>
+    <script type="text/javascript"> 
+        //initiating jQuery
+        jQuery(function($) {
+        	$(document).ready( function() {
+	            //enabling stickUp on the '.navbar-wrapper' class
+	            $('.navbar-wrapper').stickUp();
+            });
+        });
+    </script>
+    <script src="js/slick.min.js"></script>
+    <script>
+    	$('.examples').slick({
+    	  autoplay: true,
+    	  arrows: false,
+		  dots: false,
+		  infinite: true,
+		  speed: 300,
+		  slidesToShow: 1,
+		  centerMode: true,
+		  variableWidth: true
+		});
+    </script>
+</body>
+</html>

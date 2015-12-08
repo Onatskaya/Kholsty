@@ -14,10 +14,16 @@
          url('../fonts/AvantGardeCTTBold.ttf') format('truetype'),
          url('../fonts/AvantGardeCTTBold.svg#Sri-TSCRegular') format('svg')
 }
-
+html, body{
+	height: 100%;
+}
 body{
 	font-family: AvantGardeCTT;
 	padding: 0;
+}
+.main-wrapper{
+	min-height: 100%;
+
 }
 img{
 	max-width: 100%;
@@ -99,6 +105,9 @@ img{
 }
 
 /*------------------------------------------------------------------*/
+main{
+	padding-bottom: 178px;
+}
 .bunner img{
 	width: 100%;
 	margin: 10px 0;
@@ -200,6 +209,10 @@ img{
 	margin: auto;
 }
 /* --------------------Footer---------------------- */
+footer{
+	height: 178px;
+	margin-top: -178px;
+}
 .footer-top{
 	background: #fddb31; /* Old browsers */
 	background: -moz-linear-gradient(left, #fddb31 0%, #fddb31 40%, #33cd95 40%, #33cd95 100%); /* FF3.6-15 */
@@ -263,18 +276,33 @@ img{
 .popup form div input.b2{ box-sizing:border-box;  margin-left:190px; margin-top:-15px;  color:#7C7C7C}
 .popup form div input.b3{ border:1px solid #D3D3D3;  border-radius:6px;  box-sizing:border-box;  font-size:15px;  padding:10px 8px;  background-color:#F24FA0;  color:white;  width:220px}
 .textarea{ border:1px solid #D3D3D3;  border-radius:6px;  box-sizing:border-box;  font-size:15px;  padding:10px 10px 10px 10px;  color:#7C7C7C;  width:250px;  height:100px}
-#mail,#mail1, #mail2{visibility:hidden}
+#mail,#mail1, #mail2,#mail4,#mail5,#mail6,#mail7,#mail8{visibility:hidden}
 #mail:checked ~ .popup form, 
 #mail1:checked ~ .popup form,
-#mail2:checked ~ .popup form{visibility:visible}
+#mail2:checked ~ .popup form,
+#mail4:checked ~ .popup form,
+#mail5:checked ~ .popup form,
+#mail6:checked ~ .popup form,
+#mail7:checked ~ .popup form,
+#mail8:checked ~ .popup form{visibility:visible}
 label img{position: relative!important; left: 30%;}
 #mail:checked+label,
 #mail1:checked+label,
-#mail2:checked+label{ position:fixed!important;  top:0!important; bottom:0!important; right:0!important; left: 0!important; z-index:99;  background:#333; opacity: 0.5;  cursor:pointer;}
+#mail2:checked+label,
+#mail4:checked+label,
+#mail5:checked+label,
+#mail6:checked+label,
+#mail7:checked+label,
+#mail8:checked+label{ position:fixed!important;  top:0!important; bottom:0!important; right:0!important; left: 0!important; z-index:99;  background:#333; opacity: 0.5;  cursor:pointer;}
 
 #mail:checked+label > p,
 #mail1:checked+label > p,
-#mail2:checked+label > p{display: none;}
+#mail2:checked+label > p,
+#mail4:checked+label > p,
+#mail5:checked+label > p,
+#mail6:checked+label > p,
+#mail7:checked+label > p,
+#mail8:checked+label > p{display: none;}
 
 .popup{ visibility:hidden;  position:fixed;  top:0; left:0; bottom:0; right:0;  z-index:1000}
 .popup form{ font-size:11px;  position:absolute;  top:50%; left:50%;  -ms-transform:translate(-50%,-50%); -webkit-transform:translate(-50%,-50%); transform:translate(-50%,-50%);  text-align:center;  font-size:16px;  color:#3b5998;  background:#00B1EF;  border-radius:10px;  width:320px;  padding:10px 10px 10px 10px}
@@ -286,3 +314,153 @@ label img{position: relative!important; left: 30%;}
 .popup [type='submit']{cursor:pointer}
 .popup label:hover{ color:#dbeaf9;  cursor:pointer}
 label{display: block;}
+
+/* -----------------------------Action-------------------------------------------- */
+.action{
+	margin-bottom: 30px;
+}
+.main-wrapper h1{
+	text-align: center;
+	text-transform: uppercase;
+	font: 2em AvantGardeCTTBold;
+	color: #000;
+}
+.main-wrapper h1 span.subtitle{
+	text-transform: none;
+	display: block;
+	font-family: AvantGardeCTT;
+}
+.action-block{
+	padding: 10px;
+	margin:  auto 3em;
+
+}
+.action .action-block:nth-child(even){
+	background: #33cd95;
+	color: #fff;
+}
+.action .action-block:nth-child(odd){
+	background: #fff;
+	color: #000;
+}
+.action-block img{
+	float: left;
+	margin-right: 10px;
+}
+.action-block p{
+	font: 1.142857em AvantGardeCTT;
+}
+p.action-title{
+	text-transform: uppercase;
+	font-family: AvantGardeCTTBold;
+	margin-top: 10px;
+}
+.action-block a{
+	display: block;
+	float: right;
+	color: #000;
+	background: #fddb31;
+	padding: 5px 20px;
+	position: relative;
+	left: 17px;
+}
+.action-block a:hover{
+	text-decoration: none;
+	opacity: 0.95;
+}
+@media screen and (max-width: 490px) {
+	.action-block img{
+		float: none;
+	}
+}
+/* ----------------------Production-------------------------- */
+.production-container{
+	margin: auto 3em 3em;
+	overflow: hidden;
+}
+.production-description{
+	margin-top: 3em;
+	margin-bottom: 5em;
+}
+.production-description div{
+	overflow: hidden;
+	margin: 5px 0;
+}
+.production-description div img{
+	float: left;
+	margin: 0 10px;
+}
+.production-description div p{
+	font: 1.42857em/2 AvantGardeCTT;
+}
+/* -----------------------------Ideas--------------------------------- */
+.idea{
+	margin-bottom: 30px;
+}
+.idea-block{
+	padding: 10px;
+}
+.idea-block .container > div{
+	margin: auto 3em;
+}
+.idea .idea-block:nth-child(even){
+	background: #f24fa0;
+	color: #fff;
+}
+.idea .idea-block:nth-child(odd){
+	background: #33cd95;
+	color: #fff;
+}
+.idea-block p{
+	font: 1.142857em AvantGardeCTT;
+}
+p.action-title{
+	color: #000;
+	font-family: AvantGardeCTTBold;
+
+}
+.idea .idea-block:nth-child(even) img{
+	float: left;
+	margin-right: 10px;
+}
+.idea .idea-block:nth-child(odd) img{
+	float: right;
+	margin-left: 10px;
+}
+.idea-order{
+	background: #fddb31;
+	float: right;
+	border-radius: 0;
+	color: #000;
+}
+/* --------------------------Contacts----------------------------------- */
+h2{
+	text-transform: uppercase;
+	color: #00b1ef;
+	font-size: 1.6em;
+}
+.contact-form label,
+textarea + p{
+	font: 1em AvantGardeCTT;
+	color: #000;
+}
+.contact-form input,
+.contact-form textarea{
+	box-shadow: none;
+	border-radius: 0;
+	border: 1px solid #e7e7e7;
+	display: block;
+	width: 60%;
+}
+.contact-form textarea{
+	height: 120px;
+}
+.submit_button{
+	background: #fddb31;
+	width: 30%!important;
+	position: relative;
+	left: 30%;
+	line-height: 2;
+	text-transform: uppercase;
+	color: #000;
+}
